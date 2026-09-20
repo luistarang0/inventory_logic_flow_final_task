@@ -3,7 +3,15 @@ const BaseComponent = require("../common/base.component");
 class InventoryItemComponent extends BaseComponent {
 
     constructor(name) {
-        super(`_${name}`);
+        super('');
+    }
+
+    get name() {
+
+    }
+
+    get btn() {
+        
     }
 
 }
