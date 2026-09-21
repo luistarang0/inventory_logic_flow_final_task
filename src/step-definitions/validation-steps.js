@@ -3,7 +3,7 @@ const { pages } = require('../po');
 const compareText = require('./utils/compare-text');
 
 Then('Prices should be sorted from low to high', async () => {
-    const receivedPrices = await pages('inventory').getPrices();
+    const receivedPrices = await pages('inventory').inventoryList.getPrices();
     const sortedPrices = [...receivedPrices].sort((a, b) => a - b);
     
     return expect(receivedPrices).toEqual(sortedPrices);

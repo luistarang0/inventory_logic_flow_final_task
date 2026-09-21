@@ -1,6 +1,6 @@
 const BaseComponent = require("../common/base.component");
 
-class SortDropdown extends BaseComponent{
+class SortDropdownComponent extends BaseComponent{
 
     constructor() {
         super('//select[@class="product_sort_container"]');
@@ -19,4 +19,4 @@ class SortDropdown extends BaseComponent{
 
 }
 
-module.exports = SortDropdown;
+module.exports = SortDropdownComponent;

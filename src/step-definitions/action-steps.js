@@ -17,7 +17,7 @@ When('I select {string} from the Sort Price dropdown from the header', async fun
 });
 
 When('I add {string} to the cart', async function(itemName){
-    await pages('inventory').item(itemName).actionBtn.click();
+    await pages('inventory').item(itemName).actionBtn.click(); 
 });
 
 When('I remove {string} from the cart', async function(itemName) {

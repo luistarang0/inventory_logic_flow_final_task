@@ -1,13 +1,13 @@
-const LoginBoxComponent = require("./login/login-box.component");
-const HeaderComponent = require("./inventory/header.component");
+const LoginBox = require("./login/login-box.component");
 const SortDropdown = require("./inventory/sort-dropdown.component");
 const InventoryItem = require("./inventory/inventory-item.component");
-const CartBadgeComponent = require("./inventory/cart-badge.component");
+const CartBadge = require("./inventory/cart-badge.component");
+const InventoryList = require("./inventory/inventory-list.component");
 
 module.exports = {
-    LoginBoxComponent,
-    HeaderComponent,
+    LoginBox,
     SortDropdown,
-    CartBadgeComponent,
+    CartBadge,
     InventoryItem,
+    InventoryList
 }
