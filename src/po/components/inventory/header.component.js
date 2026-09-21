@@ -9,7 +9,9 @@ class HeaderComponent extends BaseComponent{
         return this.rootElement.$('.//select[@class="product_sort_container"]');
     }
 
-    
+    get cartBadge() {
+        return this.rootElement.$('.//a[@class="shopping_cart_link"]');
+    }    
 }
 
 module.exports = HeaderComponent;
