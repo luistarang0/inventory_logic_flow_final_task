@@ -1,4 +1,4 @@
-const { HeaderComponent, SortDropdown } = require('../components');
+const { HeaderComponent, SortDropdown, CartBadgeComponent, InventoryItem } = require('../components');
 const BasePage = require('./base.page');
 
 class InventoryPage extends BasePage {
@@ -6,6 +6,7 @@ class InventoryPage extends BasePage {
         super('/inventory.html');
         this.header = new HeaderComponent();
         this.sortDropdown = new SortDropdown();
+        this.cartBadge = new CartBadgeComponent();
     }
 
     get getPriceItems() {
@@ -22,6 +23,10 @@ class InventoryPage extends BasePage {
         }
 
         return prices;
+    }
+
+    item(itemName) {
+        return new InventoryItem(itemName);
     }
 }
 
